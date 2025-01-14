@@ -1,70 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
 <head>
-    <meta name="monetag" content="0422abe59872f06de1b7fb0512df7eb8">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>صفحة هبوط</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .hero {
+            background: url('https://via.placeholder.com/1200x600') no-repeat center center;
+            height: 600px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .cta-button {
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1 class="logo">MyBrand</h1>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#features">Features</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                <a href="#cta" class="btn">Get Started</a>
-            </nav>
-        </div>
-    </header>
 
-    <section class="hero">
-        <div class="container">
-            <h1>Welcome to Our Service</h1>
-            <p>Discover the best way to grow your business with our platform.</p>
-            <a href="#features" class="btn btn-primary">Learn More</a>
+    <div class="hero">
+        <div>
+            <h1>مرحبًا بكم في خدمتنا</h1>
+            <p>الحل الخاص بك لجميع احتياجاتك.</p>
+            <a href="#contact" class="btn btn-primary cta-button">ابدأ الآن</a>
         </div>
-    </section>
+    </div>
 
-    <section id="about" class="about">
-        <div class="container">
-            <h2>About Us</h2>
-            <p>We are a team of professionals dedicated to providing top-notch solutions for your needs.</p>
-        </div>
-    </section>
-
-    <section id="features" class="features">
-        <div class="container">
-            <h2>Features</h2>
-            <div class="feature">
-                <h3>Feature 1</h3>
-                <p>Short description of the feature.</p>
+    <div class="container mt-5" id="contact">
+        <h2>اتصل بنا</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">الاسم</label>
+                <input type="text" class="form-control" id="name" placeholder="أدخل اسمك">
             </div>
-            <div class="feature">
-                <h3>Feature 2</h3>
-                <p>Short description of the feature.</p>
+            <div class="form-group">
+                <label for="email">البريد الإلكتروني</label>
+                <input type="email" class="form-control" id="email" placeholder="أدخل بريدك الإلكتروني">
             </div>
-        </div>
-    </section>
+            <button type="submit" class="btn btn-success">إرسال</button>
+        </form>
+    </div>
 
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <form>
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea placeholder="Your Message" required></textarea>
-                <button type="submit" class="btn btn-primary">Send</button>
-            </form>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 MyBrand. All rights reserved.</p>
-    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
